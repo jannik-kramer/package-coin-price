@@ -1,0 +1,63 @@
+{
+    "name": "Coin Price Node",
+    "permissions": {
+       "network": "Needs to access CoinMarketCap API"
+   },
+   "options": [
+   {
+        "title": "Coins",
+        "name": "coins",
+        "type": "list",
+        "ui_width": 12,
+        "itemname": "Coins",
+        "items": [{
+            "title": "Id",
+            "ui_width": 6,
+            "name": "id",
+            "hint": "CoinMarketCap Identifier",
+            "type": "string",
+            "default": "bitcoin"
+        }]
+    },
+    {
+        "type": "section",
+        "title": "Styling"
+    },
+    {
+        "title": "Background image",
+        "name": "background_image",
+        "type": "resource",
+        "valid": ["image"],
+        "ui_width": 4,
+        "default": "background.png"
+    },
+    {
+        "type": "color",
+        "title": "Row color",
+        "name": "row_color",
+        "ui_width": 4,
+        "default": [1, 1, 1, 0.1]
+    },
+    {
+        "type": "integer",
+        "title": "Row opacity",
+        "name": "row_opacity",
+        "ui_width": 4,
+        "hint": "Opacity of the row background color in percent",
+        "default": 10
+    },
+    {
+        "type": "color",
+        "title": "Title color",
+        "name": "title_color",
+        "ui_width": 4,
+        "default": [1, 1, 1, 1]
+    },
+    {
+        "type": "color",
+        "title": "Text color",
+        "name": "text_color",
+        "ui_width": 4,
+        "default": [1, 1, 1, 1]
+    }]
+}

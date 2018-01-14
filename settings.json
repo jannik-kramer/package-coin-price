@@ -1,0 +1,48 @@
+{
+    "header_margin_top": 75,
+    "header_text_size": 50,
+    "header_columns": [
+        {
+            "text": "Rank",
+            "spacing": 0
+        },
+        {
+            "text": "",
+            "spacing": 280
+        },
+        {
+            "text": "Pair",
+            "spacing": 350
+        },
+        {
+            "text": "% Change",
+            "spacing": 850
+        },
+        {
+            "text": "Price",
+            "spacing": -1
+        }
+    ],
+    "block_height": 160,
+    "block_margin_left": 100,
+    "block_margin_right": 100,
+    "block_margin_top": 4,
+    "block_max_count": 4,
+    "block_top_start": 200,
+    "block_padding_left": 50,
+    "block_padding_right": 50,
+    "block_text_size": 50,
+    "block_large_text_size": 80,
+    "up_trend_color": {
+        "r": 0.55,
+        "g": 1,
+        "b": 0.5,
+        "a": 1
+    },
+    "down_trend_color": {
+        "r": 1,
+        "g": 0.5,
+        "b": 0.5,
+        "a": 1
+    }
+}

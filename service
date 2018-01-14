@@ -1,0 +1,29 @@
+#!/usr/bin/python
+
+import time
+import json
+import urllib
+
+from hosted import CONFIG
+
+CONFIG.restart_on_update()
+
+ticker_base = "https://api.coinmarketcap.com/v1/ticker/"
+ticker_convert = "/?convert=EUR"
+
+def loadPrices():
+    coins = []
+
+    for id in CONFIG["coins"]:
+        response = urllib.urlopen(ticker_base + id["id"] + ticker_convert)
+        raw_respons = response.read()
+        json_response = json.loads(raw_respons)
+        coins.append(json_response[0])
+
+    with open('prices.json', 'w') as outfile:
+        json.dump(coins, outfile)
+
+    time.sleep(60)
+
+while True:
+    loadPrices()
